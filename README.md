@@ -13,5 +13,6 @@
 1) Users can browse videos all over the world in different categories of his choice.
 2) Users can mangage his profile.
 3) Users receive notification for a video when uploaded by the channel he suscribed.
-4) Cool CSS transitions for profile and Navigation bars.
+4) Icons For options which improves user experience.
+5) Cool CSS transitions for profile and Navigation bars.
 
