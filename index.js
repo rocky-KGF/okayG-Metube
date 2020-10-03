@@ -2,7 +2,7 @@ var profile = document.querySelector(".mypro");
 var notifies = document.querySelector(".bell");
 var exit  = document.querySelector(".exit");
 var exit1 = document.querySelector(".exit1");
-
+var video = document.querySelector("video");
 //To display Profile Bar when profile icon at top-right corner is clicked.
 
 profile.addEventListener("click",function(){
@@ -56,9 +56,12 @@ document.querySelector(".showmore").addEventListener("click",function(){
     }
 })
 
-//To navigate back to Home page from video page.
+//To navigate back to Home page from video page and therby pausing the video.
 
 document.querySelector(".navbar-brand").addEventListener("click",function(){
     document.querySelector(".home").style.display="unset";
     document.querySelector(".vidpage").style.display="none";
+    video.pause();
 })
+
+
