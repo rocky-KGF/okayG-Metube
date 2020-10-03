@@ -1,0 +1,818 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeTUBE | Home</title>
+    <link rel="shortcut icon" href="images/Youtube-512.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!--Navigation Bar using Bootstrap Grid layout and Custom CSS designing.
+    Inline CSS is used while coding in faster.-->
+
+    <nav style="background-color: #202020; position: sticky; top: 0; width: 100%; z-index: 2; border-bottom: 1px solid grey;">
+            <div class="row ">
+                <div class="col-xl-3 col-l-3 col-md-3  col-sm-10 col-9">    
+                    <a class="navbar-brand" style="color: white; margin-top: 5px;" href="#">
+                         <img src="images/Youtube-512.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                            MeTube
+                    </a>    
+                </div>
+                <div class="col-7 mob">
+                    <div class="row">
+                        <div class="col-9" style="padding-right: 0;">
+                            <form action="" style="margin-bottom: 11;">
+                                <input type="text" placeholder="Search" style="width: 100%;background-color:#121212;color: white; padding: 3px 0 3px 8px; border: none;" class="mt-2">
+                            </form>
+                        </div>
+                        <div class="col-2 mt-2" style="color: white; padding-left: 0;">
+                            <div style="background-color: #313131; padding: 7px 0; text-align: center;"><span>
+                                <img src="images/search.png" alt="">
+                            </span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row pt-2 d-flex justify-content-center">
+                        <div class="col-3  mob">
+                            <img src="images/grid.png" class="mt-1" height="20" width="20"  alt="">
+                        </div>
+                        <div class="col-3  mob  ">
+                            <img src="images/bell.png" class="mt-1 bell" height="20" width="15"  alt="">
+                        </div>
+                        <div class="col-xl-3 col-l-3 col-md-3  col-6 ">
+                            <div class="mypro" style="height: 30px; width: 30px;border-radius: 50px; background-image: url('images/tb-5.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <!--Home page of Website which shows videos which suits user interests.-->
+
+    <div class="home">
+
+        <!--Side menu to access more options available on Videos.-->
+
+        <div class="side" style="background-color: #383838; height: 100vh; position: fixed;left: 0;z-index: 2;">
+        
+            <ul class="mm">
+                <li>
+                    <div>
+                        <img src="images/home.png" alt="">
+                        <span>Home</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/trending.png" alt="">
+                        <span>Trending</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/subscription.png" alt="">
+                        <span>Subscriptions</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/library.png" alt="">
+                        <span>Library</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--Quick menu which contains the type of videos user seen from past few days-->
+
+        <div class="options">
+            <div class="opt" style="background-color: white;color: black;">
+                All
+            </div>
+            <div class="opt">
+                Algorithms
+            </div>
+            <div class="opt">
+                Data Structures
+            </div>
+            <div class="opt">
+                HTML
+            </div>
+            <div class="opt">
+                CSS
+            </div>
+            <div class="opt">
+                Javascript
+            </div>
+            <div class="opt">
+                NodeJS
+            </div>
+            <div class="opt">
+                Angular
+            </div>
+            <div class="opt">
+                Java
+            </div>
+                <div class="opt">
+                    C++
+                </div>
+                <div class="opt">
+                    Python
+                </div>
+                <div class="opt">
+                    API's
+                </div>
+                <div class="opt">
+                    Kotlin
+                </div>
+                <div class="opt">
+                    Android
+                </div>
+                <div class="opt">
+                    Aptitude
+                </div>
+                <div class="opt">
+                    Trees
+                </div>
+                <div class="opt">
+                    Dynamic Programming
+                </div>
+        </div>
+
+        <!--Main part where all the videos based on user choice is shown.-->
+
+        <div class="content">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cont special">
+                        <div class="thumbnail faded">
+                            <span>CLICK THUMBNAIL 3:33</span>
+                        </div>
+                        <div class="cbody">
+                            <img src="images/tb-6.jpeg" alt="">
+                            <div class="cb">
+                                <p>Alan Walker || Faded</p>
+                                <span>Alan Walker</span><br>
+                                <span>2.8B views</span>&nbsp;<span>.</span>&nbsp;<span>4 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cont">
+                        <div class="thumbnail">
+                            <span>5:50</span>
+                        </div>
+                        <div class="cbody">
+                            <img src="images/tb-1.jpg" alt="">
+                            <div class="cb">
+                                <p>Beautiful Backgrounds | HD wallpapers | Watch Now</p>
+                                <span>Channer Name</span><br>
+                                <span>views</span>&nbsp;<span>.</span>&nbsp;<span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cont">
+                        <div class="thumbnail">
+                            <span>5:50</span>
+                        </div>
+                        <div class="cbody">
+                            <img src="images/tb-2.jpg" alt="">
+                            <div class="cb">
+                                <p>Beautiful Backgrounds | HD wallpapers | Watch Now</p>
+                                <span>Channer Name</span><br>
+                                <span>views</span>&nbsp;<span>.</span>&nbsp;<span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cont">
+                        <div class="thumbnail">
+                            <span>5:50</span>
+                        </div>
+                        <div class="cbody">
+                            <img src="images/tb-3.jpg" alt="">
+                            <div class="cb">
+                                <p>Beautiful Backgrounds | HD wallpapers | Watch Now</p>
+                                <span>Channer Name</span><br>
+                                <span>views</span>&nbsp;<span>.</span>&nbsp;<span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cont">
+                        <div class="thumbnail">
+                            <span>5:50</span>
+                        </div>
+                        <div class="cbody">
+                            <img src="images/tb-4.jpg" alt="">
+                            <div class="cb">
+                                <p>Beautiful Backgrounds | HD wallpapers | Watch Now</p>
+                                <span>Channer Name</span><br>
+                                <span>views</span>&nbsp;<span>.</span>&nbsp;<span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cont">
+                        <div class="thumbnail">
+                            <span>5:50</span>
+                        </div>
+                        <div class="cbody">
+                            <img src="images/tb-5.jpg" alt="">
+                            <div class="cb">
+                                <p>Beautiful Backgrounds | HD wallpapers | Watch Now</p>
+                                <span>Channer Name</span><br>
+                                <span>views</span>&nbsp;<span>.</span>&nbsp;<span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cont">
+                        <div class="thumbnail">
+                            <span>5:50</span>
+                        </div>
+                        <div class="cbody">
+                            <img src="images/tb-6.jpeg" alt="">
+                            <div class="cb">
+                                <p>Beautiful Backgrounds | HD wallpapers | Watch Now</p>
+                                <span>Channer Name</span><br>
+                                <span>views</span>&nbsp;<span>.</span>&nbsp;<span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cont">
+                        <div class="thumbnail">
+                            <span>5:50</span>
+                        </div>
+                        <div class="cbody">
+                            <img src="images/tb-8.jpg" alt="">
+                            <div class="cb">
+                                <p>Beautiful Backgrounds | HD wallpapers | Watch Now</p>
+                                <span>Channer Name</span><br>
+                                <span>views</span>&nbsp;<span>.</span>&nbsp;<span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!--Sample Video page of the website which is displayed by clicking the first 
+    thumbnail of content section.-->
+
+    <div class="vidpage pt-4" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-l-8 col-md-12 col-sm-12 col-xs-12">
+                   <div class="cvideo">
+                        <video src="images/Faded.mp4" controls autoplay></video>
+                   </div>
+                   <div class="vid-details pt-2">
+
+                       <!--Video Title-->
+
+                       <h5>Alan Walker - FADED</h5>
+                        <div class="responses d-flex justify-content-between">
+
+                            <!--Views and Date of Upload of the Video-->
+
+                            <div><span class="text-secondary font-weight-bold">8B views</span>&nbsp;<span>.</span>&nbsp;<span class="text-secondary font-weight-bold">Dec 4, 2015</span></div>
+                            <div class="resp d-flex justify-content-around">
+
+                                <!--Options for user to like,dislike or share the video-->
+
+                                <div class="like mr-4">
+                                    <img src="images/like.png" alt="">
+                                    <span>20M</span>
+                                </div>
+                                <div class="dislike mr-4">
+                                    <img src="images/dislike.png" alt="">
+                                    <span>551K</span>
+                                </div>
+                                <div class="share">
+                                    <img src="images/share.png" alt="">
+                                    <span>Share</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!--Channel Information-->
+
+                        <div class="channel d-flex">
+                            <img src="images/tb-6.jpeg" height="60" width="60" class="rounded-circle" alt="">
+                            <div class="chcontent">
+                                <div class="chhead d-flex justify-content-between px-3  pb-3">
+                                    <div><span class="font-weight-bold">Alan Walker</span><br>
+                                    <span>36.6M subscribers</span></div>
+                                    <button class="py-0.3 px-4 btn btn-danger font-weight-bold mob">SUBSCRIBE</button>
+                                    <span class="text-danger font-weight-bold desk">SUBSCRIBE</span>
+                                </div>
+                                <div class="chbody px-3">
+
+                                    <!--Video Description-->
+
+                                    <p class="overflow-hidden description" style="height: 16vh;margin-bottom: 10px; transition: 0.2s;">Walkers! Thanks for listening. If you want to hear my newest single and the last video in the World of Walker trilogy, "Heading Home," check out the official music video here: https://youtu.be/mfSU_XwEnZA & the LIVE performance here: https://youtu.be/cYxAr_NZF9E
+                                       
+                                        #Faded #AlanWalker #EDM #House #YouAreNotAlone
+                                        
+                                        _____________________
+                                        
+                                        // LYRICS // Alan Walker - Faded // LYRICS //
+                                        
+                                        You were the shadow to my light
+                                        Did you feel us
+                                        Another start
+                                        You fade away
+                                        Afraid our aim is out of sight
+                                        Wanna see us
+                                        Alive
+                                        Where are you now
+                                        Where are you now
+                                        Where are you now
+                                        Was it all in my fantasy
+                                        Where are you now
+                                        Were you only imaginary
+                                        Where are you now
+                                        Atlantis
+                                        Under the sea
+                                        Under the sea
+                                        Where are you now
+                                        Another dream
+                                        The monsters running wild inside of me
+                                        I'm faded
+                                        I'm faded
+                                        So lost
+                                        I'm faded
+                                        I'm faded
+                                        So lost
+                                        I'm faded
+                                        These shallow waters, never met
+                                        What I needed
+                                        I'm letting go
+                                        A deeper dive
+                                        Eternal silence of the sea
+                                        I'm breathing
+                                        Alive
+                                        Where are you now
+                                        Where are you now
+                                        Under the bright
+                                        But faded lights
+                                        You set my heart on fire
+                                        Where are you now
+                                        Where are you now
+                                        Where are you now
+                                        Atlantis
+                                        Under the sea
+                                        Under the sea
+                                        Where are you now
+                                        Another dream
+                                        The monsters running wild inside of me
+                                        I'm faded
+                                        I'm faded
+                                        So lost
+                                        I'm faded
+                                        I'm faded
+                                        So lost
+                                        I'm faded
+                                        
+                                        /////////////////////////////////////////
+                                        
+                                        From the beginning. Check out my other earlier songs here: https://www.youtube.com/watch?v=nO77w...
+                                        
+                                        Also, BTS footage here, like from my recent Aviation Tour in China: https://www.youtube.com/watch?v=UsprG...
+                                        
+                                        /////////////////////////////////////////
+                                        
+                                        CREDITS:
+                                        Vocalist: Iselin Solheim
+                                        Video Location: Tallinn, Estonia
+                                        Video produced by: Bror Bror
+                                        Directors: Rikkard & Tobias Häggbom
+                                        D.O.P: Rikkard Häggbom
+                                        Edit and grading: Bror Bror
+                                        Actor: Shahab Salehi
+                                        
+                                        _____________________________________
+                                        
+                                        Facebook: http://bit.ly/AlanWalker_Facebook
+                                        Instagram: http://bit.ly/AlanWalker_Instagram
+                                        Twitter: http://bit.ly/AlanWalker_Twitter
+                                        Tiktok: alanwalkermusic
+                                        Snapchat: alanwalkermusic
+                                        
+                                        Merch available at https://bit.ly/AlanWalkerStore
+                                        ______________________________________
+                                        
+                                        Vocalist: Iselin Solheim
+                                        Video Location: Tallinn, Estonia
+                                        Video produced by: Bror Bror
+                                        Directors: Rikkard & Tobias Häggbom
+                                        D.O.P: Rikkard Häggbom
+                                        Edit and grading: Bror Bror
+                                        Actor: Shahab Salehi
+                                        
+                                        © 2015 Alan Walker & MER Musikk
+                                        ℗ 2015 Sony Music Entertainment Sweden AB
+                                        </p>
+                                        <span class="text-secondary font-weight-bold showmore">SHOW MORE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!--All about comments is displayed here-->
+                        
+                        <div class="comsection">
+
+                            <!--Comments count-->
+
+                            <div class="count mb-4">
+                                <span class="font-weight-normal">1,131,201 Comments</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <img src="images/sort.png" alt="">
+                                    <span>SORT BY</span>
+                                </span>
+                            </div>
+
+                            <!--For User to Comment for the video-->
+
+                            <div class="mycmnt d-flex">
+                                    <img src="images/tb-1.jpg" class="rounded-circle" height="40" width="40" alt="">
+                                    <form action="" class="w-100 d-flex flex-column  px-3">
+                                    <input type="text" class="w-100 bg-dark text-white border border-secondary py-1 px-3" placeholder="Add Your Comment">
+                                        <div class="align-self-end mt-2">
+                                            <span>CANCEL</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="submit" class="btn btn-primary" value="COMMENT">
+                                        </div>
+                                    </form>
+                            </div>
+
+                            <!--All comments for the video-->
+
+                            <div class="comments">
+                                    <div class="comment  d-flex">
+                                        <img src="images/tb-3.jpg" class="rounded-circle" height="40" width="40"alt="">
+                                        <div class="comdetails pl-3">
+                                            <span class="font-weight-bold">Football Club</span>&nbsp;&nbsp;&nbsp;
+                                            <span class="text-secondary">3 months ago</span>
+                                            <p>Let's see how many people watching this in quarantine.</p>
+                                            <div class="resp d-flex">
+                                                <div class="like mr-4">
+                                                    <img src="images/like.png" height="16" width="16" alt="">
+                                                    &nbsp;
+                                                    <span>20M</span>
+                                                </div>
+                                                <div class="dislike mr-4">
+                                                    <img src="images/dislike.png" height="16" width="16" alt="">
+                                                    &nbsp;
+                                                    <span>551K</span>
+                                                </div>
+                                                <span class="text-secondary font-weight-bold">REPLY</span>
+                                            </div>
+                                            <div class="my-3">
+                                                <img src="images/expand-button.png" alt="">&nbsp; 
+                                                <span class="font-weight-bold text-primary">View 1 reply</span>
+                                            </div>
+
+                                            <!--Replies of a particular Comment-->
+
+                                            <div class="replies mb-3">
+                                                <div class="comments">
+                                                    <div class="comment  d-flex">
+                                                        <img src="images/tb-4.jpg" class="rounded-circle" height="40" width="40"alt="">
+                                                        <div class="comdetails pl-3">
+                                                            <span class="font-weight-bold">yme ypma</span>&nbsp;&nbsp;&nbsp;
+                                                            <span class="text-secondary">3 months ago</span>
+                                                            <p class="mb-2">Good One.</p>
+                                                            <div class="resp d-flex">
+                                                                <div class="like mr-4">
+                                                                    <img src="images/like.png" height="16" width="16" alt="">
+                                                                    &nbsp;
+                                                                    <span>1.6K</span>
+                                                                </div>
+                                                                <div class="dislike mr-4">
+                                                                    <img src="images/dislike.png" height="16" width="16" alt="">
+                                                                    &nbsp;
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="text-secondary font-weight-bold">REPLY</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+
+                <!--More Recommendations for user to watch next.-->
+
+                <div class="col-l-4 col-xl-4 col-md-12 col-sm-12 col-xs-12 px-0 py-0">
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                    <div class="more d-flex">
+                        <div class="thumb">
+                            <span>5:50</span>
+                        </div>
+                        <div class="mbody pl-2">
+                            <span class="font-weight-bold">Alan Walker, Sabrina Carpenter& Farruko- On my way</span>
+                            <br>
+                            <span class="s">Alan Walker</span>
+                            <br>
+                            <span class="s">333M views</span>&nbsp;<span  class="s">.</span>&nbsp;<span  class="s">1 year ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Notifications Panel which is hided initially and only seen when user click on bell
+    icon in navigation bar-->
+
+    <div class="notifications" >
+        <div class="nhead">
+            <div>
+                <span class="font-weight-bold exit">X</span> &nbsp;&nbsp;&nbsp;
+                Notifications</div>
+            <div><img src="images/gear.png" alt=""></div>
+        </div>
+        <div class="nbody">
+            <div class="nitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <p>Recommended: Watch the most famous wallpapers around the 
+                        world || HD || 4K
+                    </p>
+                    <span>26 minutes ago</span>
+                </div>
+                <img class="nbn" src="images/tb-2.jpg" alt="">
+            </div>
+            <div class="nitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <p>Recommended: Watch the most famous wallpapers around the 
+                        world || HD || 4K
+                    </p>
+                    <span>26 minutes ago</span>
+                </div>
+                <img class="nbn" src="images/tb-2.jpg" alt="">
+            </div>
+            <div class="nitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <p>Recommended: Watch the most famous wallpapers around the 
+                        world || HD || 4K
+                    </p>
+                    <span>26 minutes ago</span>
+                </div>
+                <img class="nbn" src="images/tb-2.jpg" alt="">
+            </div>
+            <div class="nitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <p>Recommended: Watch the most famous wallpapers around the 
+                        world || HD || 4K
+                    </p>
+                    <span>26 minutes ago</span>
+                </div>
+                <img class="nbn" src="images/tb-2.jpg" alt="">
+            </div>
+            <div class="nitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <p>Recommended: Watch the most famous wallpapers around the 
+                        world || HD || 4K
+                    </p>
+                    <span>26 minutes ago</span>
+                </div>
+                <img class="nbn" src="images/tb-2.jpg" alt="">
+            </div>
+            <div class="nitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <p>Recommended: Watch the most famous wallpapers around the 
+                        world || HD || 4K
+                    </p>
+                    <span>26 minutes ago</span>
+                </div>
+                <img class="nbn" src="images/tb-2.jpg" alt="">
+            </div>
+            <div class="nitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <p>Recommended: Watch the most famous wallpapers around the 
+                        world || HD || 4K
+                    </p>
+                    <span>26 minutes ago</span>
+                </div>
+                <img class="nbn" src="images/tb-2.jpg" alt="">
+            </div>
+            <div class="nitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <p>Recommended: Watch the most famous wallpapers around the 
+                        world || HD || 4K
+                    </p>
+                    <span>26 minutes ago</span>
+                </div>
+                <img class="nbn" src="images/tb-2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--Profile Panel which is hided initially and only seen when user click on bell
+    icon in navigation bar-->
+
+    <div class="profile">
+        <div class="phead">
+            &nbsp;&nbsp;&nbsp;<span class="font-weight-bold exit1">X</span> 
+            <div class="nitems nhitems">
+                <img class="nbi" src="images/tb-1.jpg" alt="">
+                <div class="nc">
+                    <span class="name">Jeremy Rose</span><br>
+                    <span>jeremyrose321@gmail.com</span><br>
+                    <span>Manage Your Account</span>
+                </div>
+            </div>
+        </div>
+        <div class="pbody">
+            <div class="pitem">
+                <img src="images/icons8-contacts-50.png" alt="">
+                <span>Your Channel</span>
+            </div>
+            <div class="pitem">
+                <img src="images/icons8-us-dollar-50.png" alt="">
+                <span>Purchases And Memberships</span>
+            </div>
+            <div class="pitem">
+                <img src="images/grid.png" alt="">
+                <span>MeTube Studio</span>
+            </div>
+            <div class="pitem">
+                <img src="images/icons8-switch-50.png" alt="">
+                <span>Switch Account</span>
+            </div>
+            <div class="pitem">
+                <img src="images/icons8-sign-out-50.png" alt="">
+                <span>Sign out</span>
+            </div>
+            <hr>
+            <div class="pitem">
+                <img src="images/gear.png" alt="">
+                <span>Settings</span>
+            </div>
+            <div class="pitem">
+                <img src="images/icons8-help-50.png" alt="">
+                <span>Help</span>
+            </div>
+            <div class="pitem">
+                <img src="images/icons8-feedback-50.png" alt="">
+                <span>FeedBack</span>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
